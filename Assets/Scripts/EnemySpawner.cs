@@ -4,19 +4,45 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Networking;
 
-public class EnemySpawner : NetworkBehaviour
+public class EnemySpawner : MonoBehaviour
 {
 
     public GameObject enemyPrefab;
-    public Transform aiGoal;
+    public GameObject aiGoal;
+    public float timer;
+    public int enemyCount;
 
+    int currEnemyCount = 0;
+    float currTimer;
+
+    private void Start()
+    {
+        currTimer = timer;
+    }
     //List<NetworkPlayer> playerList = new List<NetworkPlayer>();
     //public int playerCount;
 
+    private void Update()
+    {
+        if(currTimer > 0)
+        {
+            currTimer -= Time.deltaTime;
+        }
+        else if(currTimer <= 0 && currEnemyCount < enemyCount)
+        {
+            SpawnEnemy();
+        }
+    }
 
 
-
-
+    void SpawnEnemy()
+    {
+        Vector3 pos = transform.position;
+        GameObject temp = Instantiate(enemyPrefab, new Vector3(pos.x, pos.y + (enemyPrefab.GetComponent<CapsuleCollider>().height / 2), pos.z), Quaternion.identity);
+        temp.GetComponent<EnemyAi>().player = aiGoal;
+        currEnemyCount++;
+        currTimer = timer;
+    }
 
 
 }
