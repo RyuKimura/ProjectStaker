@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour{
 	// Use this for initialization
 	void Start () {
         Application.runInBackground = true;
-
+        Cursor.lockState = CursorLockMode.Locked;
         _characterController = GetComponent<CharacterController>();
         _camera = head.GetComponent<Camera>();
         _camera.enabled = true;
