@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class playerMovement : NetworkBehaviour{
+public class playerMovement : MonoBehaviour{
 
     [Header("Player Attributes")]
-    public float speed = 3.0f;
-    public float lightRadius = 5.0f;
+    public float speed;
+    public float lightRadius;
     [Space(10)]
 
     [Header("Mouse looking")]
-    public float XSensitivity = 10.0f;
-    public float YSensitivity = 10.0f;
-    public float MaxVeticalLook = 90.0f;
-    public float MinVeticalLook = -90.0f;
+    public float XSensitivity   ;
+    public float YSensitivity   ;
+    public float MaxVeticalLook ;
+    public float MinVeticalLook ;
     [Space(10)]
 
     public float gravity = 9.8f;
@@ -36,11 +36,11 @@ public class playerMovement : NetworkBehaviour{
         _camera.enabled = true;
 
         
-        if (!GetComponent<NetworkIdentity>().isLocalPlayer)
-        {
-            Destroy(_camera.gameObject);
-            Destroy(gameObject.GetComponent<playerMovement>());
-        }
+        //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
+        //{
+        //    Destroy(_camera.gameObject);
+        //    Destroy(gameObject.GetComponent<playerMovement>());
+        //}
     }
 	
 	// Update is called once per frame
@@ -49,11 +49,11 @@ public class playerMovement : NetworkBehaviour{
         Look();
     }
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, lightRadius);
-    }
+    //void OnDrawGizmosSelected()
+    //{
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(transform.position, lightRadius);
+    //}
 
     void FixedUpdate()
     {
@@ -80,11 +80,11 @@ public class playerMovement : NetworkBehaviour{
             _isWalking = false;
         }
 
-        Vector3 dir = transform.forward * _input.y + transform.right * _input.x;
+        Vector3 dir = (transform.forward * _input.y + transform.right * _input.x) * speed;
 
         if(!_characterController.isGrounded) dir.y -= gravity;
 
-        _characterController.Move(dir * Time.deltaTime);
+        _characterController.Move(dir *  Time.deltaTime);
         
     }
     

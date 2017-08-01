@@ -8,9 +8,12 @@ public class EnemyAi : MonoBehaviour {
     public Transform goal;
 
 
-    GameObject[] listOfPlayers;
-	// Use this for initialization
-	void Start () {
+    //public List<NetworkPlayer> listOfPlayers = new List<NetworkPlayer>();
+
+    public GameObject player;
+
+    // Use this for initialization
+    void Start () {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = getPlayer().position;
 	}
@@ -22,9 +25,8 @@ public class EnemyAi : MonoBehaviour {
 
     Transform getPlayer()
     {
-        listOfPlayers = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(listOfPlayers);
-        int temp = Random.Range(0, listOfPlayers.Length);
-        return listOfPlayers[temp].transform;
+        //Debug.Log(listOfPlayers);
+       // int temp = Random.Range(0, listOfPlayers.Count);
+        return player.transform;//listOfPlayers[temp];
     }
 }
