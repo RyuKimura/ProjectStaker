@@ -8,6 +8,11 @@ public class playerMovement : MonoBehaviour{
     [Header("Player Attributes")]
     public float speed;
     public float lightRadius;
+    public float sprintSpeedMultiplier;
+    public float stamina;
+    public float staminaDepletionRate;
+    public float staminaReplenishRate;
+    public float sprintCooldown;
     [Space(10)]
 
     [Header("Mouse looking")]
@@ -24,8 +29,12 @@ public class playerMovement : MonoBehaviour{
     CharacterController _characterController;
     Vector2 _input;
     bool _isWalking;
+    bool _running;
     Camera _camera;
     Vector2 mouseLook;
+    float currStamina;
+    bool outofStamina;
+    float currCooldown;
 
 	// Use this for initialization
 	void Start () {
@@ -34,8 +43,7 @@ public class playerMovement : MonoBehaviour{
         _characterController = GetComponent<CharacterController>();
         _camera = head.GetComponent<Camera>();
         _camera.enabled = true;
-
-        
+        currStamina = stamina;
         //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
         //{
         //    Destroy(_camera.gameObject);
@@ -47,6 +55,7 @@ public class playerMovement : MonoBehaviour{
 	void Update () {
         //jumping
         Look();
+        Debug.Log(_running);
     }
 
     //void OnDrawGizmosSelected()
@@ -57,7 +66,27 @@ public class playerMovement : MonoBehaviour{
 
     void FixedUpdate()
     {
+        if (outofStamina)
+        {
+            currCooldown -= Time.deltaTime;
+            if (currCooldown <= 0) outofStamina = false;
+        }
+
         moveFunction();
+        if (_running)
+        {
+            currStamina -= staminaDepletionRate;
+        }
+        else
+        {
+            currStamina += staminaReplenishRate;
+        }
+
+        if (currStamina <= 0)
+        {
+            outofStamina = true;
+            currCooldown = sprintCooldown;
+        }
     }
 
     void moveFunction()
@@ -81,6 +110,17 @@ public class playerMovement : MonoBehaviour{
         }
 
         Vector3 dir = (transform.forward * _input.y + transform.right * _input.x) * speed;
+
+        if(Input.GetAxis("Sprint") > 0 && !outofStamina)
+        {
+            dir *= sprintSpeedMultiplier;
+            _running = true;
+        }
+        else
+        {
+            _running = false;
+        }
+ 
 
         if(!_characterController.isGrounded) dir.y -= gravity;
 

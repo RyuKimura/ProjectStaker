@@ -11,12 +11,15 @@ public class EnemySpawner : MonoBehaviour
     public GameObject aiGoal;
     public float timer;
     public int enemyCount;
+    
 
     int currEnemyCount = 0;
     float currTimer;
+    private float lightRadii;
 
     private void Start()
     {
+        lightRadii = aiGoal.GetComponent<playerMovement>().lightRadius;
         currTimer = timer;
     }
     //List<NetworkPlayer> playerList = new List<NetworkPlayer>();
@@ -28,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
         {
             currTimer -= Time.deltaTime;
         }
-        else if(currTimer <= 0 && currEnemyCount < enemyCount)
+        else if(currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii* lightRadii)
         {
             SpawnEnemy();
         }
@@ -44,7 +47,10 @@ public class EnemySpawner : MonoBehaviour
         currTimer = timer;
     }
 
-
+    float getDist()
+    {
+        return Vector3.SqrMagnitude(transform.position - aiGoal.transform.position);
+    }
 }
 
 
