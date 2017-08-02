@@ -1,14 +1,29 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Networking;
 
+public enum SpawnType
+{
+    None,
+    Timer,
+    Trigger
+}
+
 public class EnemySpawner : MonoBehaviour
 {
+    public SpawnType SpawnMethod;
 
+    [Space(10)]
+    [Header("Prefabs")]
     public GameObject enemyPrefab;
     public GameObject aiGoal;
+    public GameObject[] TriggerBoxes;
+    [Space(10)]
+
+    [Header("Variables")]
     public float timer;
     public int enemyCount;
     
@@ -21,24 +36,37 @@ public class EnemySpawner : MonoBehaviour
     {
         lightRadii = aiGoal.GetComponent<playerMovement>().lightRadius;
         currTimer = timer;
+
+        for(int i = 0; i < TriggerBoxes.Length; i++)
+        {
+            TriggerBoxes[i].GetComponent<TriggerBoxScript>().parent = gameObject;
+        }
+
     }
     //List<NetworkPlayer> playerList = new List<NetworkPlayer>();
     //public int playerCount;
 
     private void Update()
     {
-        if(currTimer > 0)
+        if((int)SpawnMethod == (int)SpawnType.Timer)
+        {
+            TimerMethod();
+        }
+    }
+
+    void TimerMethod()
+    {
+        if (currTimer > 0)
         {
             currTimer -= Time.deltaTime;
         }
-        else if(currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii* lightRadii)
+        else if (currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii * lightRadii)
         {
             SpawnEnemy();
         }
     }
 
-
-    void SpawnEnemy()
+    public void SpawnEnemy()
     {
         Vector3 pos = transform.position;
         GameObject temp = Instantiate(enemyPrefab, new Vector3(pos.x, pos.y + (enemyPrefab.GetComponent<CapsuleCollider>().height / 2), pos.z), Quaternion.identity);
