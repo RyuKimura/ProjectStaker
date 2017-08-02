@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 058ce2a91836c4e4db5656ced94db707
+timeCreated: 1501636139
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: A_low
+    100002: AA_low
+    100004: B_low
+    100006: back_carriage
+    100008: BB_low
+    100010: Beams
+    100012: Bumpers
+    100014: C1_low
+    100016: C_low
+    100018: Cart_base
+    100020: cart_front
+    100022: Cart_side
+    100024: CC_low
+    100026: DD_low
+    100028: E_low
+    100030: EE_low
+    100032: F_low
+    100034: FF_low
+    100036: G_low
+    100038: GG_low
+    100040: GG_low 1
+    100042: H_low
+    100044: HH_low
+    100046: HH_low 1
+    100048: I_low
+    100050: II_low
+    100052: J_low
+    100054: JJ_low
+    100056: K_low
+    100058: KK_low
+    100060: L_low
+    100062: M_low
+    100064: N_low
+    100066: O_low
+    100068: P_low
+    100070: Q_low
+    100072: R_low
+    100074: roof
+    100076: S_low
+    100078: //RootNode
+    100080: T_low
+    100082: U_low
+    100084: under_carriage
+    100086: V_low
+    100088: W_low
+    100090: wheels
+    100092: X_low
+    100094: X_low 1
+    100096: Y_low
+    100098: Z_low
+    400000: A_low
+    400002: AA_low
+    400004: B_low
+    400006: back_carriage
+    400008: BB_low
+    400010: Beams
+    400012: Bumpers
+    400014: C1_low
+    400016: C_low
+    400018: Cart_base
+    400020: cart_front
+    400022: Cart_side
+    400024: CC_low
+    400026: DD_low
+    400028: E_low
+    400030: EE_low
+    400032: F_low
+    400034: FF_low
+    400036: G_low
+    400038: GG_low
+    400040: GG_low 1
+    400042: H_low
+    400044: HH_low
+    400046: HH_low 1
+    400048: I_low
+    400050: II_low
+    400052: J_low
+    400054: JJ_low
+    400056: K_low
+    400058: KK_low
+    400060: L_low
+    400062: M_low
+    400064: N_low
+    400066: O_low
+    400068: P_low
+    400070: Q_low
+    400072: R_low
+    400074: roof
+    400076: S_low
+    400078: //RootNode
+    400080: T_low
+    400082: U_low
+    400084: under_carriage
+    400086: V_low
+    400088: W_low
+    400090: wheels
+    400092: X_low
+    400094: X_low 1
+    400096: Y_low
+    400098: Z_low
+    2300000: A_low
+    2300002: AA_low
+    2300004: B_low
+    2300006: BB_low
+    2300008: C1_low
+    2300010: C_low
+    2300012: CC_low
+    2300014: DD_low
+    2300016: E_low
+    2300018: EE_low
+    2300020: F_low
+    2300022: FF_low
+    2300024: G_low
+    2300026: GG_low
+    2300028: GG_low 1
+    2300030: H_low
+    2300032: HH_low
+    2300034: HH_low 1
+    2300036: I_low
+    2300038: II_low
+    2300040: J_low
+    2300042: JJ_low
+    2300044: K_low
+    2300046: KK_low
+    2300048: L_low
+    2300050: M_low
+    2300052: N_low
+    2300054: O_low
+    2300056: P_low
+    2300058: Q_low
+    2300060: R_low
+    2300062: S_low
+    2300064: T_low
+    2300066: U_low
+    2300068: V_low
+    2300070: W_low
+    2300072: X_low
+    2300074: X_low 1
+    2300076: Y_low
+    2300078: Z_low
+    3300000: A_low
+    3300002: AA_low
+    3300004: B_low
+    3300006: BB_low
+    3300008: C1_low
+    3300010: C_low
+    3300012: CC_low
+    3300014: DD_low
+    3300016: E_low
+    3300018: EE_low
+    3300020: F_low
+    3300022: FF_low
+    3300024: G_low
+    3300026: GG_low
+    3300028: GG_low 1
+    3300030: H_low
+    3300032: HH_low
+    3300034: HH_low 1
+    3300036: I_low
+    3300038: II_low
+    3300040: J_low
+    3300042: JJ_low
+    3300044: K_low
+    3300046: KK_low
+    3300048: L_low
+    3300050: M_low
+    3300052: N_low
+    3300054: O_low
+    3300056: P_low
+    3300058: Q_low
+    3300060: R_low
+    3300062: S_low
+    3300064: T_low
+    3300066: U_low
+    3300068: V_low
+    3300070: W_low
+    3300072: X_low
+    3300074: X_low 1
+    3300076: Y_low
+    3300078: Z_low
+    4300000: GG_low
+    4300002: HH_low
+    4300004: II_low
+    4300006: JJ_low
+    4300008: KK_low
+    4300010: L_low
+    4300012: M_low
+    4300014: N_low
+    4300016: O_low
+    4300018: P_low
+    4300020: X_low
+    4300022: Z_low
+    4300024: AA_low
+    4300026: BB_low
+    4300028: CC_low
+    4300030: DD_low
+    4300032: EE_low
+    4300034: HH_low
+    4300036: GG_low
+    4300038: FF_low
+    4300040: A_low
+    4300042: B_low
+    4300044: C_low
+    4300046: E_low
+    4300048: C1_low
+    4300050: F_low
+    4300052: G_low
+    4300054: H_low
+    4300056: I_low
+    4300058: J_low
+    4300060: K_low
+    4300062: Q_low
+    4300064: R_low
+    4300066: S_low
+    4300068: T_low
+    4300070: U_low
+    4300072: V_low
+    4300074: W_low
+    4300076: X_low
+    4300078: Y_low
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
