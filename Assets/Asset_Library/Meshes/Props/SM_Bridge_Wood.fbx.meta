@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: a62a91ba8758cfa47a2d425ae4acf0b6
+timeCreated: 1501639711
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group2
+    100002: group2 1
+    100004: group2 2
+    100006: group2 3
+    100008: group3
+    100010: group3 1
+    100012: group3 2
+    100014: group3 3
+    100016: Group58147
+    100018: pCube8
+    100020: pCube9
+    100022: pCylinder1
+    100024: pCylinder1 1
+    100026: pCylinder1 2
+    100028: pCylinder1 3
+    100030: pole
+    100032: pole1
+    100034: pole2
+    100036: pole3
+    100038: pTorus6
+    100040: pTorus6 1
+    100042: pTorus6 2
+    100044: pTorus6 3
+    100046: pTorus6 4
+    100048: pTorus6 5
+    100050: pTorus6 6
+    100052: pTorus6 7
+    100054: pTorus7
+    100056: pTorus7 1
+    100058: pTorus7 2
+    100060: pTorus7 3
+    100062: pTorus7 4
+    100064: pTorus7 5
+    100066: pTorus7 6
+    100068: pTorus7 7
+    100070: pTorus8
+    100072: pTorus8 1
+    100074: pTorus8 2
+    100076: pTorus8 3
+    100078: pTorus8 4
+    100080: pTorus8 5
+    100082: pTorus8 6
+    100084: pTorus8 7
+    100086: //RootNode
+    400000: group2
+    400002: group2 1
+    400004: group2 2
+    400006: group2 3
+    400008: group3
+    400010: group3 1
+    400012: group3 2
+    400014: group3 3
+    400016: Group58147
+    400018: pCube8
+    400020: pCube9
+    400022: pCylinder1
+    400024: pCylinder1 1
+    400026: pCylinder1 2
+    400028: pCylinder1 3
+    400030: pole
+    400032: pole1
+    400034: pole2
+    400036: pole3
+    400038: pTorus6
+    400040: pTorus6 1
+    400042: pTorus6 2
+    400044: pTorus6 3
+    400046: pTorus6 4
+    400048: pTorus6 5
+    400050: pTorus6 6
+    400052: pTorus6 7
+    400054: pTorus7
+    400056: pTorus7 1
+    400058: pTorus7 2
+    400060: pTorus7 3
+    400062: pTorus7 4
+    400064: pTorus7 5
+    400066: pTorus7 6
+    400068: pTorus7 7
+    400070: pTorus8
+    400072: pTorus8 1
+    400074: pTorus8 2
+    400076: pTorus8 3
+    400078: pTorus8 4
+    400080: pTorus8 5
+    400082: pTorus8 6
+    400084: pTorus8 7
+    400086: //RootNode
+    2300000: Group58147
+    2300002: pCube8
+    2300004: pCube9
+    2300006: pCylinder1
+    2300008: pCylinder1 1
+    2300010: pCylinder1 2
+    2300012: pCylinder1 3
+    2300014: pTorus6
+    2300016: pTorus6 1
+    2300018: pTorus6 2
+    2300020: pTorus6 3
+    2300022: pTorus6 4
+    2300024: pTorus6 5
+    2300026: pTorus6 6
+    2300028: pTorus6 7
+    2300030: pTorus7
+    2300032: pTorus7 1
+    2300034: pTorus7 2
+    2300036: pTorus7 3
+    2300038: pTorus7 4
+    2300040: pTorus7 5
+    2300042: pTorus7 6
+    2300044: pTorus7 7
+    2300046: pTorus8
+    2300048: pTorus8 1
+    2300050: pTorus8 2
+    2300052: pTorus8 3
+    2300054: pTorus8 4
+    2300056: pTorus8 5
+    2300058: pTorus8 6
+    2300060: pTorus8 7
+    3300000: Group58147
+    3300002: pCube8
+    3300004: pCube9
+    3300006: pCylinder1
+    3300008: pCylinder1 1
+    3300010: pCylinder1 2
+    3300012: pCylinder1 3
+    3300014: pTorus6
+    3300016: pTorus6 1
+    3300018: pTorus6 2
+    3300020: pTorus6 3
+    3300022: pTorus6 4
+    3300024: pTorus6 5
+    3300026: pTorus6 6
+    3300028: pTorus6 7
+    3300030: pTorus7
+    3300032: pTorus7 1
+    3300034: pTorus7 2
+    3300036: pTorus7 3
+    3300038: pTorus7 4
+    3300040: pTorus7 5
+    3300042: pTorus7 6
+    3300044: pTorus7 7
+    3300046: pTorus8
+    3300048: pTorus8 1
+    3300050: pTorus8 2
+    3300052: pTorus8 3
+    3300054: pTorus8 4
+    3300056: pTorus8 5
+    3300058: pTorus8 6
+    3300060: pTorus8 7
+    4300000: pCube8
+    4300002: Group58147
+    4300004: pCube9
+    4300006: pCylinder1
+    4300008: pTorus6
+    4300010: pTorus7
+    4300012: pTorus8
+    4300014: pTorus6
+    4300016: pTorus7
+    4300018: pTorus8
+    4300020: pCylinder1
+    4300022: pTorus6
+    4300024: pTorus7
+    4300026: pTorus8
+    4300028: pTorus6
+    4300030: pTorus7
+    4300032: pTorus8
+    4300034: pCylinder1
+    4300036: pTorus6
+    4300038: pTorus7
+    4300040: pTorus8
+    4300042: pTorus6
+    4300044: pTorus7
+    4300046: pTorus8
+    4300048: pCylinder1
+    4300050: pTorus6
+    4300052: pTorus7
+    4300054: pTorus8
+    4300056: pTorus6
+    4300058: pTorus7
+    4300060: pTorus8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
