@@ -55,7 +55,6 @@ public class playerMovement : MonoBehaviour{
 	void Update () {
         //jumping
         Look();
-        Debug.Log(_running);
     }
 
     //void OnDrawGizmosSelected()
