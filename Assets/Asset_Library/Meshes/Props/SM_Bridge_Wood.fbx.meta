@@ -49,6 +49,30 @@ ModelImporter:
     100082: pTorus8 6
     100084: pTorus8 7
     100086: //RootNode
+    100088: group4
+    100090: group5
+    100092: group6
+    100094: group7
+    100096: pCube10
+    100098: pCube10 1
+    100100: pCube11
+    100102: pCube11 1
+    100104: pCube12
+    100106: pCube12 1
+    100108: pCube13
+    100110: pCube13 1
+    100112: pTorus6 10
+    100114: pTorus6 11
+    100116: pTorus6 8
+    100118: pTorus6 9
+    100120: pTorus7 10
+    100122: pTorus7 11
+    100124: pTorus7 8
+    100126: pTorus7 9
+    100128: pTorus8 10
+    100130: pTorus8 11
+    100132: pTorus8 8
+    100134: pTorus8 9
     400000: group2
     400002: group2 1
     400004: group2 2
@@ -93,6 +117,30 @@ ModelImporter:
     400082: pTorus8 6
     400084: pTorus8 7
     400086: //RootNode
+    400088: group4
+    400090: group5
+    400092: group6
+    400094: group7
+    400096: pCube10
+    400098: pCube10 1
+    400100: pCube11
+    400102: pCube11 1
+    400104: pCube12
+    400106: pCube12 1
+    400108: pCube13
+    400110: pCube13 1
+    400112: pTorus6 10
+    400114: pTorus6 11
+    400116: pTorus6 8
+    400118: pTorus6 9
+    400120: pTorus7 10
+    400122: pTorus7 11
+    400124: pTorus7 8
+    400126: pTorus7 9
+    400128: pTorus8 10
+    400130: pTorus8 11
+    400132: pTorus8 8
+    400134: pTorus8 9
     2300000: Group58147
     2300002: pCube8
     2300004: pCube9
@@ -124,6 +172,26 @@ ModelImporter:
     2300056: pTorus8 5
     2300058: pTorus8 6
     2300060: pTorus8 7
+    2300062: pCube10
+    2300064: pCube10 1
+    2300066: pCube11
+    2300068: pCube11 1
+    2300070: pCube12
+    2300072: pCube12 1
+    2300074: pCube13
+    2300076: pCube13 1
+    2300078: pTorus6 10
+    2300080: pTorus6 11
+    2300082: pTorus6 8
+    2300084: pTorus6 9
+    2300086: pTorus7 10
+    2300088: pTorus7 11
+    2300090: pTorus7 8
+    2300092: pTorus7 9
+    2300094: pTorus8 10
+    2300096: pTorus8 11
+    2300098: pTorus8 8
+    2300100: pTorus8 9
     3300000: Group58147
     3300002: pCube8
     3300004: pCube9
@@ -155,6 +223,26 @@ ModelImporter:
     3300056: pTorus8 5
     3300058: pTorus8 6
     3300060: pTorus8 7
+    3300062: pCube10
+    3300064: pCube10 1
+    3300066: pCube11
+    3300068: pCube11 1
+    3300070: pCube12
+    3300072: pCube12 1
+    3300074: pCube13
+    3300076: pCube13 1
+    3300078: pTorus6 10
+    3300080: pTorus6 11
+    3300082: pTorus6 8
+    3300084: pTorus6 9
+    3300086: pTorus7 10
+    3300088: pTorus7 11
+    3300090: pTorus7 8
+    3300092: pTorus7 9
+    3300094: pTorus8 10
+    3300096: pTorus8 11
+    3300098: pTorus8 8
+    3300100: pTorus8 9
     4300000: pCube8
     4300002: Group58147
     4300004: pCube9
@@ -186,6 +274,26 @@ ModelImporter:
     4300056: pTorus6
     4300058: pTorus7
     4300060: pTorus8
+    4300062: pCube11
+    4300064: pCube13
+    4300066: pTorus8
+    4300068: pTorus7
+    4300070: pTorus6
+    4300072: pTorus6
+    4300074: pTorus7
+    4300076: pTorus8
+    4300078: pCube12
+    4300080: pCube10
+    4300082: pCube11
+    4300084: pCube13
+    4300086: pTorus8
+    4300088: pTorus7
+    4300090: pTorus6
+    4300092: pTorus6
+    4300094: pTorus7
+    4300096: pTorus8
+    4300098: pCube12
+    4300100: pCube10
     9500000: //RootNode
   materials:
     importMaterials: 1
