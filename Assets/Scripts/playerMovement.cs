@@ -9,6 +9,7 @@ public class playerMovement : MonoBehaviour{
     public int lives;
     public float speed;
     public float lightRadius;
+    public float timeTakenToLightTorch;
     public float sprintSpeedMultiplier;
     public float stamina;
     public float staminaDepletionRate;
@@ -25,6 +26,7 @@ public class playerMovement : MonoBehaviour{
 
     public float gravity = 9.8f;
     public GameObject head;
+    public GameObject torch;
 
     //PRIVATES
     CharacterController _characterController;
@@ -36,6 +38,9 @@ public class playerMovement : MonoBehaviour{
     float currStamina;
     bool outofStamina;
     float currCooldown;
+    bool hasTorch;
+    bool torchIsLit;
+    float torchMeter = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +50,10 @@ public class playerMovement : MonoBehaviour{
         _camera = head.GetComponent<Camera>();
         _camera.enabled = true;
         currStamina = stamina;
+        hasTorch = true;
+
+        //torch.GetComponent<MeshRenderer>().material.color = Color.red;
+
         //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
         //{
         //    Destroy(_camera.gameObject);
@@ -55,7 +64,6 @@ public class playerMovement : MonoBehaviour{
 	// Update is called once per frame
 	void Update () {
         //jumping
-        Debug.Log(lives);
         Look();
     }
 
@@ -64,6 +72,23 @@ public class playerMovement : MonoBehaviour{
     //    Gizmos.color = Color.yellow;
     //    Gizmos.DrawWireSphere(transform.position, lightRadius);
     //}
+
+
+    void OnTriggerStay(Collider other)
+    {
+        if (!torchIsLit)
+        {
+            if (other.gameObject.tag == "LightSource" && Input.GetAxis("Light") > 0)
+            {
+                torchMeter++;
+                if (torchMeter >= 100)
+                {
+                    torchIsLit = true;
+                    torch.GetComponent<MeshRenderer>().material.color = Color.red;
+                }
+            }
+        }
+    }
 
     void FixedUpdate()
     {
