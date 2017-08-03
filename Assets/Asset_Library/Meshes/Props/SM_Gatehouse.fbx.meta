@@ -44,6 +44,13 @@ ModelImporter:
     100072: HH_low 1
     100074: HH_low1
     100076: HH_low1 1
+    100078: back_door
+    100080: barricade
+    100082: front_door
+    100084: pCube12
+    100086: pCube13
+    100088: pCube14
+    100090: pCube15
     400000: gate
     400002: gatehouse
     400004: gatehouse4
@@ -83,6 +90,13 @@ ModelImporter:
     400072: HH_low 1
     400074: HH_low1
     400076: HH_low1 1
+    400078: back_door
+    400080: barricade
+    400082: front_door
+    400084: pCube12
+    400086: pCube13
+    400088: pCube14
+    400090: pCube15
     2300000: gatehouse4
     2300002: polySurface1
     2300004: polySurface2
@@ -114,6 +128,10 @@ ModelImporter:
     2300056: HH_low 1
     2300058: HH_low1
     2300060: HH_low1 1
+    2300062: pCube12
+    2300064: pCube13
+    2300066: pCube14
+    2300068: pCube15
     3300000: gatehouse4
     3300002: polySurface1
     3300004: polySurface2
@@ -145,6 +163,10 @@ ModelImporter:
     3300056: HH_low 1
     3300058: HH_low1
     3300060: HH_low1 1
+    3300062: pCube12
+    3300064: pCube13
+    3300066: pCube14
+    3300068: pCube15
     4300000: gatehouse4
     4300002: polySurface1
     4300004: polySurface2
@@ -176,6 +198,10 @@ ModelImporter:
     4300056: FF_low
     4300058: GG_low1
     4300060: HH_low1
+    4300062: pCube13
+    4300064: pCube12
+    4300066: pCube14
+    4300068: pCube15
     9500000: //RootNode
   materials:
     importMaterials: 1
