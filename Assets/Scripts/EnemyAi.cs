@@ -8,15 +8,18 @@ public enum EnemyState
     NONE,
     CHASE,
     WAIT,
+    RUN,
     ATTACK
 }
 
 public class EnemyAi : MonoBehaviour {
 
     //public List<NetworkPlayer> listOfPlayers = new List<NetworkPlayer>();
-    [Range(0,100)]
     public float braveryMeter;
     public GameObject player;
+    [Tooltip("In Seconds")]
+    public float attackCoolDown;
+    public float attackRadius;
     [Space(10)]
 
     [Header("State Thresholds")]
@@ -26,32 +29,59 @@ public class EnemyAi : MonoBehaviour {
 
     EnemyState CurrentState;
     NavMeshAgent agent;
-    Vector3 prevPlayerLoc;
-    float playerLightRadius; 
+    float playerLightRadius;
+    float speed;
+    float currentSpeed;
+    float currentCooldown;
+    playerMovement playerScript;
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        prevPlayerLoc = getPlayer();
         CurrentState = EnemyState.CHASE;
         playerLightRadius = player.GetComponent<playerMovement>().lightRadius;
+        playerScript = player.GetComponent<playerMovement>();
+        speed = agent.speed;
+        currentCooldown = attackCoolDown;
 	}
 	
 	void Update () {
-        if (braveryMeter <= chaseThreshold)
+
+        braveryMeter++;
+
+        if (currentCooldown < attackCoolDown) currentCooldown += Time.deltaTime;
+
+        var lookPos = getPlayer() - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
+
+        if (braveryMeter <= chaseThreshold && CurrentState != EnemyState.CHASE)
         {
-            ChaseState();
+            CurrentState = EnemyState.CHASE;
         }
-        else if (braveryMeter > chaseThreshold && braveryMeter < attackThreshold)
+        else if (braveryMeter >= attackThreshold && CurrentState != EnemyState.ATTACK)
         {
-            AttackState();
+            CurrentState = EnemyState.ATTACK;
         }
-        else if(braveryMeter >= attackThreshold)
+
+        if (CurrentState != EnemyState.ATTACK)
+        {
+            if (TooCloseToPlayer() && WillBeTooCloseToPlayer())
+            {
+                RunState();
+            }
+            else if (!TooCloseToPlayer() && WillBeTooCloseToPlayer())
+            {
+                WaitState();
+            }
+            else if(!TooCloseToPlayer() && !WillBeTooCloseToPlayer())
+            {
+                ChaseState();
+            }
+        } else
         {
             AttackState();
         }
     }
-
-
-
 
 
 
@@ -62,37 +92,60 @@ public class EnemyAi : MonoBehaviour {
 
     float getDistancetoPlayer()
     {
-        return Vector3.SqrMagnitude(transform.position - getPlayer());
+        return Vector3.Distance(transform.position, getPlayer());
     }
 
-    float getInverseAngleToPlayer()
+    float getNextDistancetoPlayer()
     {
-        return Vector3.Angle(transform.position, player.transform.position);
+        return Vector3.Distance(agent.nextPosition , getPlayer());
     }
+    
+    bool TooCloseToPlayer()
+    {
+        return getDistancetoPlayer() <  playerLightRadius;
+    }
+
+    bool WillBeTooCloseToPlayer()
+    {
+        return getNextDistancetoPlayer() + 1 <  playerLightRadius;
+    }
+
 
 
     void ChaseState()
     {
-        if (getDistancetoPlayer() < playerLightRadius * playerLightRadius)
-        {
-            RunState();
-        }
-        
+        CurrentState = EnemyState.CHASE;
+        currentSpeed = speed;
+        agent.destination = getPlayer();
+    }
 
-        if (Vector3.SqrMagnitude(getPlayer() - prevPlayerLoc) > 1)
-        {
-            agent.destination = getPlayer();
-            prevPlayerLoc = getPlayer();
-        }
+    void WaitState()
+    {
+        CurrentState = EnemyState.WAIT;
+        currentSpeed = 0;
     }
 
     void RunState()
     {
-        agent.Move(-Vector3.forward * 0.1f);
+        CurrentState = EnemyState.RUN;
+        agent.nextPosition =  transform.position - transform.forward * 0.1f;
+        //agent.Move(-transform.forward * 0.1f);
     }
 
     void AttackState()
     {
-        Debug.Log("ATTACKIING");
+        if(getDistancetoPlayer() > attackRadius * attackRadius)
+        {
+            agent.Move(transform.forward * 0.2f);
+        }
+        else
+        {
+            if (currentCooldown >= attackCoolDown)
+            {
+                CurrentState = EnemyState.ATTACK;
+                playerScript.lives--;
+                currentCooldown = 0;
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class playerMovement : MonoBehaviour{
 
     [Header("Player Attributes")]
+    public int lives;
     public float speed;
     public float lightRadius;
     public float sprintSpeedMultiplier;
@@ -54,6 +55,7 @@ public class playerMovement : MonoBehaviour{
 	// Update is called once per frame
 	void Update () {
         //jumping
+        Debug.Log(lives);
         Look();
     }
 
