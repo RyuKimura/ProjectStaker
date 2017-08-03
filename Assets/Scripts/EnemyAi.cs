@@ -51,35 +51,7 @@ public class EnemyAi : MonoBehaviour {
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
 
-        if (!playerScript.torchIsLit) braveryMeter = attackThreshold;
-
-        if (braveryMeter <= chaseThreshold && CurrentState != EnemyState.CHASE)
-        {
-            CurrentState = EnemyState.CHASE;
-        }
-        else if (braveryMeter >= attackThreshold && CurrentState != EnemyState.ATTACK)
-        {
-            CurrentState = EnemyState.ATTACK;
-        }
-
-        if (CurrentState != EnemyState.ATTACK)
-        {
-            if (TooCloseToPlayer() && WillBeTooCloseToPlayer())
-            {
-                RunState();
-            }
-            else if (!TooCloseToPlayer() && WillBeTooCloseToPlayer())
-            {
-                WaitState();
-            }
-            else if(!TooCloseToPlayer() && !WillBeTooCloseToPlayer())
-            {
-                ChaseState();
-            }
-        } else
-        {
-            AttackState();
-        }
+        StateCheck();
     }
 
 
@@ -87,6 +59,12 @@ public class EnemyAi : MonoBehaviour {
     {
         return playerScript.currentLightRadius;
     }
+
+    bool getPlayerSwingState()
+    {
+        return playerScript.swingingTorch;
+    }
+
     Vector3 getPlayerPosition()
     {
         return player.transform.position;
@@ -113,6 +91,39 @@ public class EnemyAi : MonoBehaviour {
     }
 
 
+    void StateCheck()
+    {
+        if (!playerScript.torchIsLit) braveryMeter = attackThreshold;
+
+        if (braveryMeter <= chaseThreshold && CurrentState != EnemyState.CHASE)
+        {
+            CurrentState = EnemyState.CHASE;
+        }
+        else if (braveryMeter >= attackThreshold && CurrentState != EnemyState.ATTACK)
+        {
+            CurrentState = EnemyState.ATTACK;
+        }
+
+        if (CurrentState != EnemyState.ATTACK)
+        {
+            if (TooCloseToPlayer() && WillBeTooCloseToPlayer())
+            {
+                RunState();
+            }
+            else if (!TooCloseToPlayer() && WillBeTooCloseToPlayer())
+            {
+                WaitState();
+            }
+            else if (!TooCloseToPlayer() && !WillBeTooCloseToPlayer())
+            {
+                ChaseState();
+            }
+        }
+        else
+        {
+            AttackState();
+        }
+    }
 
     void ChaseState()
     {

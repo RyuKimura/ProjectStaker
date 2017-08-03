@@ -8,8 +8,16 @@ public class playerMovement : MonoBehaviour{
     [Header("Player Attributes")]
     public int lives;
     public float speed;
+    [Space(5)]
+    [Header("Light Stuff")]
     public float lightRadius;
+    public float lightSwingDuration;
+    public float lightSwingRadiusIncrease;
+    public float lightEffectiveness;
+    public float swingStaminaCost;
     public float timeTakenToLightTorch;
+    [Space(5)]
+    [Header("Sprint Stuff")]
     public float sprintSpeedMultiplier;
     public float stamina;
     public float staminaDepletionRate;
@@ -43,6 +51,8 @@ public class playerMovement : MonoBehaviour{
     bool hasTorch;
     [HideInInspector] public bool torchIsLit;
     float torchMeter = 0;
+    [HideInInspector] public bool swingingTorch;
+    float currentTorchSwingDuration;
 
 	// Use this for initialization
 	void Start () {
@@ -68,6 +78,18 @@ public class playerMovement : MonoBehaviour{
 	void Update () {
         //jumping
         Look();
+
+        if (swingingTorch)
+        {
+            if(currentTorchSwingDuration > lightSwingDuration)
+            {
+                swingingTorch = false;
+                torch.transform.localScale = new Vector3(0.1f, 1, 0.1f);
+                currentLightRadius -= lightSwingRadiusIncrease;
+                currentTorchSwingDuration = 0;
+            }
+            currentTorchSwingDuration += Time.deltaTime;
+        }
     }
 
     //void OnDrawGizmosSelected()
@@ -102,7 +124,8 @@ public class playerMovement : MonoBehaviour{
             if (currCooldown <= 0) outofStamina = false;
         }
 
-        moveFunction();
+        if(!swingingTorch) moveFunction();
+
         if (_running)
         {
             currStamina -= staminaDepletionRate;
@@ -121,12 +144,19 @@ public class playerMovement : MonoBehaviour{
 
     void moveFunction()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             torchIsLit = false;
             torchMeter = 0;
             currentLightRadius = 0;
             torch.GetComponent<MeshRenderer>().material.color = Color.gray;
+        }
+
+        if (Input.GetKey(KeyCode.Mouse0) && !swingingTorch && torchIsLit)
+        {
+            swingingTorch = true;
+            torch.transform.localScale = new Vector3(0.2f, 2, 0.2f);
+            currentLightRadius += lightSwingRadiusIncrease;
         }
 
         // Read input
