@@ -29,7 +29,6 @@ public class EnemyAi : MonoBehaviour {
 
     EnemyState CurrentState;
     NavMeshAgent agent;
-    float playerLightRadius;
     float speed;
     float currentSpeed;
     float currentCooldown;
@@ -37,22 +36,22 @@ public class EnemyAi : MonoBehaviour {
     void Start () {
         agent = GetComponent<NavMeshAgent>();
         CurrentState = EnemyState.CHASE;
-        playerLightRadius = player.GetComponent<playerMovement>().lightRadius;
         playerScript = player.GetComponent<playerMovement>();
         speed = agent.speed;
         currentCooldown = attackCoolDown;
 	}
 	
 	void Update () {
-
         braveryMeter++;
 
         if (currentCooldown < attackCoolDown) currentCooldown += Time.deltaTime;
 
-        var lookPos = getPlayer() - transform.position;
+        var lookPos = getPlayerPosition() - transform.position;
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
+
+        if (!playerScript.torchIsLit) braveryMeter = attackThreshold;
 
         if (braveryMeter <= chaseThreshold && CurrentState != EnemyState.CHASE)
         {
@@ -84,30 +83,33 @@ public class EnemyAi : MonoBehaviour {
     }
 
 
-
-    Vector3 getPlayer()
+    float getPlayerLightRadius()
+    {
+        return playerScript.currentLightRadius;
+    }
+    Vector3 getPlayerPosition()
     {
         return player.transform.position;
     }
 
     float getDistancetoPlayer()
     {
-        return Vector3.Distance(transform.position, getPlayer());
+        return Vector3.Distance(transform.position, getPlayerPosition());
     }
 
     float getNextDistancetoPlayer()
     {
-        return Vector3.Distance(agent.nextPosition , getPlayer());
+        return Vector3.Distance(agent.nextPosition , getPlayerPosition());
     }
     
     bool TooCloseToPlayer()
     {
-        return getDistancetoPlayer() <  playerLightRadius;
+        return getDistancetoPlayer() < getPlayerLightRadius();
     }
 
     bool WillBeTooCloseToPlayer()
     {
-        return getNextDistancetoPlayer() + 1 <  playerLightRadius;
+        return getNextDistancetoPlayer() + 1 < getPlayerLightRadius();
     }
 
 
@@ -116,7 +118,7 @@ public class EnemyAi : MonoBehaviour {
     {
         CurrentState = EnemyState.CHASE;
         currentSpeed = speed;
-        agent.destination = getPlayer();
+        agent.destination = getPlayerPosition();
     }
 
     void WaitState()

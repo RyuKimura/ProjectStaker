@@ -28,6 +28,8 @@ public class playerMovement : MonoBehaviour{
     public GameObject head;
     public GameObject torch;
 
+    [HideInInspector] public float currentLightRadius = 0;
+
     //PRIVATES
     CharacterController _characterController;
     Vector2 _input;
@@ -39,7 +41,7 @@ public class playerMovement : MonoBehaviour{
     bool outofStamina;
     float currCooldown;
     bool hasTorch;
-    bool torchIsLit;
+    [HideInInspector] public bool torchIsLit;
     float torchMeter = 0;
 
 	// Use this for initialization
@@ -51,6 +53,7 @@ public class playerMovement : MonoBehaviour{
         _camera.enabled = true;
         currStamina = stamina;
         hasTorch = true;
+        torchIsLit = false;
 
         //torch.GetComponent<MeshRenderer>().material.color = Color.red;
 
@@ -80,11 +83,12 @@ public class playerMovement : MonoBehaviour{
         {
             if (other.gameObject.tag == "LightSource" && Input.GetAxis("Light") > 0)
             {
-                torchMeter++;
-                if (torchMeter >= 100)
+                torchMeter +=Time.deltaTime;
+                if (torchMeter >= timeTakenToLightTorch)
                 {
                     torchIsLit = true;
                     torch.GetComponent<MeshRenderer>().material.color = Color.red;
+                    currentLightRadius = lightRadius;
                 }
             }
         }
@@ -117,6 +121,14 @@ public class playerMovement : MonoBehaviour{
 
     void moveFunction()
     {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            torchIsLit = false;
+            torchMeter = 0;
+            currentLightRadius = 0;
+            torch.GetComponent<MeshRenderer>().material.color = Color.gray;
+        }
+
         // Read input
         float horizontal =  Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
