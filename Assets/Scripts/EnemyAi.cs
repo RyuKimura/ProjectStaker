@@ -93,7 +93,14 @@ public class EnemyAi : MonoBehaviour {
 
     void StateCheck()
     {
-        if (!playerScript.torchIsLit) braveryMeter = attackThreshold;
+        if(TooCloseToPlayer() && playerScript.swingingTorch && !playerScript.successfullySwung)
+        {
+            braveryMeter -= playerScript.lightEffectiveness;
+            playerScript.lightEffectiveness -= playerScript.lightDecreaseEffect;
+            playerScript.successfullySwung = true;
+        }
+
+        if (!playerScript.torchIsLit || !playerScript.hasTorch) braveryMeter = attackThreshold;
 
         if (braveryMeter <= chaseThreshold && CurrentState != EnemyState.CHASE)
         {

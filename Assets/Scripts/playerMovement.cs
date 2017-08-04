@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour{
     public float lightSwingDuration;
     public float lightSwingRadiusIncrease;
     public float lightEffectiveness;
+    public float lightDecreaseEffect;
     public float swingStaminaCost;
     public float timeTakenToLightTorch;
     [Space(5)]
@@ -48,10 +49,11 @@ public class playerMovement : MonoBehaviour{
     float currStamina;
     bool outofStamina;
     float currCooldown;
-    bool hasTorch;
+    [HideInInspector] public bool hasTorch;
     [HideInInspector] public bool torchIsLit;
     float torchMeter = 0;
     [HideInInspector] public bool swingingTorch;
+    [HideInInspector] public bool successfullySwung;
     float currentTorchSwingDuration;
 
 	// Use this for initialization
@@ -64,8 +66,6 @@ public class playerMovement : MonoBehaviour{
         currStamina = stamina;
         hasTorch = true;
         torchIsLit = false;
-
-        //torch.GetComponent<MeshRenderer>().material.color = Color.red;
 
         //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
         //{
@@ -84,6 +84,7 @@ public class playerMovement : MonoBehaviour{
             if(currentTorchSwingDuration > lightSwingDuration)
             {
                 swingingTorch = false;
+                successfullySwung = false;
                 torch.transform.localScale = new Vector3(0.1f, 1, 0.1f);
                 currentLightRadius -= lightSwingRadiusIncrease;
                 currentTorchSwingDuration = 0;
@@ -144,13 +145,13 @@ public class playerMovement : MonoBehaviour{
 
     void moveFunction()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
-            torchIsLit = false;
-            torchMeter = 0;
-            currentLightRadius = 0;
-            torch.GetComponent<MeshRenderer>().material.color = Color.gray;
-        }
+        //if (Input.GetKey(KeyCode.Mouse1))
+        //{
+        //    torchIsLit = false;
+        //    torchMeter = 0;
+        //    currentLightRadius = 0;
+        //    torch.GetComponent<MeshRenderer>().material.color = Color.gray;
+        //}
 
         if (Input.GetKey(KeyCode.Mouse0) && !swingingTorch && torchIsLit)
         {

@@ -52,6 +52,7 @@ public class EnemySpawner : MonoBehaviour
         {
             TimerMethod();
         }
+
     }
 
     void TimerMethod()
