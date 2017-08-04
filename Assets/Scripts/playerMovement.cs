@@ -36,6 +36,8 @@ public class playerMovement : MonoBehaviour{
     public float gravity = 9.8f;
     public GameObject head;
     public GameObject torch;
+    public GameObject FlameParticle;
+    public GameObject LightSource;
 
     [HideInInspector] public float currentLightRadius = 0;
 
@@ -55,6 +57,8 @@ public class playerMovement : MonoBehaviour{
     [HideInInspector] public bool swingingTorch;
     [HideInInspector] public bool successfullySwung;
     float currentTorchSwingDuration;
+    Material torchMaterial;
+    Color torchColor;
 
 	// Use this for initialization
 	void Start () {
@@ -65,7 +69,12 @@ public class playerMovement : MonoBehaviour{
         _camera.enabled = true;
         currStamina = stamina;
         hasTorch = true;
-        torchIsLit = false;
+        torchMaterial = torch.GetComponent<Renderer>().material;
+        torchColor = torchMaterial.GetColor("_EmissionColor");
+
+        TurnLightOff();
+
+
 
         //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
         //{
@@ -73,12 +82,11 @@ public class playerMovement : MonoBehaviour{
         //    Destroy(gameObject.GetComponent<playerMovement>());
         //}
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         //jumping
         Look();
-        Debug.DrawRay(head.transform.position, head.transform.forward, Color.red);
         InteractWithObjects();
         if (swingingTorch)
         {
@@ -124,9 +132,7 @@ public class playerMovement : MonoBehaviour{
                 torchMeter +=Time.deltaTime;
                 if (torchMeter >= timeTakenToLightTorch)
                 {
-                    torchIsLit = true;
-                    torch.GetComponent<MeshRenderer>().material.color = Color.red;
-                    currentLightRadius = lightRadius;
+                    TurnLightOn();
                 }
             }
         }
@@ -223,5 +229,23 @@ public class playerMovement : MonoBehaviour{
         transform.localRotation = Quaternion.AngleAxis(mouseLook.x, transform.up);
         _camera.transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
 
+    }
+
+    void TurnLightOff()
+    {
+        torchIsLit = false;
+        torch.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
+        FlameParticle.GetComponent<ParticleSystem>().Stop();
+        LightSource.GetComponent<Light>().enabled = false;
+        currentLightRadius = 0;
+    }
+
+    void TurnLightOn()
+    {
+        torchIsLit = true;
+        torch.GetComponent<Renderer>().material.SetColor("_EmissionColor", torchColor);
+        FlameParticle.GetComponent<ParticleSystem>().Play();
+        LightSource.GetComponent<Light>().enabled = true;
+        currentLightRadius = lightRadius;
     }
 }

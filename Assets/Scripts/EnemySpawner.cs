@@ -26,8 +26,8 @@ public class EnemySpawner : MonoBehaviour
     [Header("Variables")]
     public float timer;
     public int enemyCount;
+    public float DestroyTimer;
     
-
     int currEnemyCount = 0;
     float currTimer;
     private float lightRadii;
@@ -59,7 +59,7 @@ public class EnemySpawner : MonoBehaviour
 
         if(aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
         {
-            Destroy(gameObject);
+            Destroy(gameObject,DestroyTimer);
         }
     }
 
@@ -69,7 +69,7 @@ public class EnemySpawner : MonoBehaviour
         {
             currTimer -= Time.deltaTime;
         }
-        else if (currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii * lightRadii)
+        else if (currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii)
         {
             SpawnEnemy();
         }
