@@ -78,7 +78,8 @@ public class playerMovement : MonoBehaviour{
 	void Update () {
         //jumping
         Look();
-
+        Debug.DrawRay(head.transform.position, head.transform.forward, Color.red);
+        InteractWithObjects();
         if (swingingTorch)
         {
             if(currentTorchSwingDuration > lightSwingDuration)
@@ -99,6 +100,20 @@ public class playerMovement : MonoBehaviour{
     //    Gizmos.DrawWireSphere(transform.position, lightRadius);
     //}
 
+    void InteractWithObjects()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(head.transform.position, head.transform.forward, out hit, 1.0f))
+        {
+            if (hit.transform.tag == "Interactable" && Input.GetAxis("Interact") != 0)
+            {
+                if (hit.transform.GetComponent<DoorScript>())
+                {
+                    hit.transform.GetComponent<DoorScript>().triggerActivate(); 
+                }
+            }
+        }
+    }
 
     void OnTriggerStay(Collider other)
     {

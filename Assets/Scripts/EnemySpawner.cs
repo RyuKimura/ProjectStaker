@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
 
         for(int i = 0; i < TriggerBoxes.Length; i++)
         {
-            TriggerBoxes[i].GetComponent<TriggerBoxScript>().parent = gameObject;
+            TriggerBoxes[i].GetComponent<TriggerBoxScript>().parent.Add(gameObject);
         }
 
     }
@@ -52,7 +52,15 @@ public class EnemySpawner : MonoBehaviour
         {
             TimerMethod();
         }
+        var lookPos = aiGoal.transform.position - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
 
+        if(aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void TimerMethod()
@@ -78,7 +86,16 @@ public class EnemySpawner : MonoBehaviour
 
     float getDist()
     {
-        return Vector3.SqrMagnitude(transform.position - aiGoal.transform.position);
+        return Vector3.Distance(transform.position, aiGoal.transform.position);
+    }
+
+    public void triggerActivate()
+    {
+        SpawnMethod = SpawnType.Timer;
+        for (int i = 0; i < TriggerBoxes.Length; i++)
+        {
+            TriggerBoxes[i].GetComponent<TriggerBoxScript>().alreadyActivated = true;
+        }
     }
 }
 

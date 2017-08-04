@@ -2,21 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[SerializeField]
 public class TriggerBoxScript : MonoBehaviour {
 
-    public GameObject parent;
+    public List<GameObject> parent = new List<GameObject>();
 
     public bool alreadyActivated = false;
+
+
 
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player" && alreadyActivated == false)
-        {
-            EnemySpawner spawner = parent.GetComponent<EnemySpawner>();
-            spawner.SpawnMethod = SpawnType.Timer;
-            for(int i = 0; i < spawner.TriggerBoxes.Length; i++)
+        { 
+            for(int i = 0; i< parent.Count; i++)
             {
-                spawner.TriggerBoxes[i].GetComponent<TriggerBoxScript>().alreadyActivated = true;
+                if (parent[i].GetComponent<EnemySpawner>())
+                {
+                    parent[i].GetComponent<EnemySpawner>().triggerActivate();
+                }
             }
         }
     }
