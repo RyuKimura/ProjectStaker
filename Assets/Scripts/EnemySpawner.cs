@@ -21,6 +21,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject aiGoal;
     public GameObject[] TriggerBoxes;
+    public ParticleSystem deathFlame;
     [Space(10)]
 
     [Header("Variables")]
@@ -31,11 +32,14 @@ public class EnemySpawner : MonoBehaviour
     int currEnemyCount = 0;
     float currTimer;
     private float lightRadii;
+    bool dead;
 
     private void Start()
     {
         lightRadii = aiGoal.GetComponent<playerMovement>().lightRadius;
         currTimer = timer;
+        dead = false;
+        deathFlame.Stop();
 
         for(int i = 0; i < TriggerBoxes.Length; i++)
         {
@@ -48,19 +52,23 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if((int)SpawnMethod == (int)SpawnType.Timer)
+        if ((int)SpawnMethod == (int)SpawnType.Timer && !dead)
         {
             TimerMethod();
+
+            if (aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
+            {
+                deathFlame.Play();
+                dead = true;
+                Destroy(gameObject, DestroyTimer);
+            }
         }
         var lookPos = aiGoal.transform.position - transform.position;
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
 
-        if(aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
-        {
-            Destroy(gameObject,DestroyTimer);
-        }
+        
     }
 
     void TimerMethod()
