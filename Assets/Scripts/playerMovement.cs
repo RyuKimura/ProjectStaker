@@ -38,6 +38,7 @@ public class playerMovement : MonoBehaviour{
     public GameObject torch;
     public GameObject FlameParticle;
     public GameObject LightSource;
+    public UnityEngine.UI.Image JAM;
 
     [HideInInspector] public float currentLightRadius = 0;
 
@@ -51,7 +52,7 @@ public class playerMovement : MonoBehaviour{
     float currStamina;
     bool outofStamina;
     float currCooldown;
-    [HideInInspector] public bool hasTorch;
+    [HideInInspector] public bool hasTorch = true;
     [HideInInspector] public bool torchIsLit;
     float torchMeter = 0;
     [HideInInspector] public bool swingingTorch;
@@ -59,19 +60,21 @@ public class playerMovement : MonoBehaviour{
     float currentTorchSwingDuration;
     Material torchMaterial;
     Color torchColor;
+    int maxLife;
+    bool dead = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         Application.runInBackground = true;
         Cursor.lockState = CursorLockMode.Locked;
         _characterController = GetComponent<CharacterController>();
         _camera = head.GetComponent<Camera>();
         _camera.enabled = true;
         currStamina = stamina;
-        hasTorch = true;
+        maxLife = lives;
+        JAM.color = new Vector4(1,1,1, 0);
         torchMaterial = torch.GetComponent<Renderer>().material;
         torchColor = torchMaterial.GetColor("_EmissionColor");
-
         TurnLightOff();
 
 
@@ -86,19 +89,28 @@ public class playerMovement : MonoBehaviour{
     // Update is called once per frame
     void Update () {
         //jumping
-        Look();
-        InteractWithObjects();
-        if (swingingTorch)
+        if (lives <= 0) dead = true;
+        if (!dead)
         {
-            if(currentTorchSwingDuration > lightSwingDuration)
+            Look();
+            InteractWithObjects();
+
+            if (swingingTorch)
             {
-                swingingTorch = false;
-                successfullySwung = false;
-                torch.transform.localScale = new Vector3(0.1f, 1, 0.1f);
-                currentLightRadius -= lightSwingRadiusIncrease;
-                currentTorchSwingDuration = 0;
+                if (currentTorchSwingDuration > lightSwingDuration)
+                {
+                    swingingTorch = false;
+                    successfullySwung = false;
+                    currentLightRadius -= lightSwingRadiusIncrease;
+                    currentTorchSwingDuration = 0;
+                }
+                currentTorchSwingDuration += Time.deltaTime;
             }
-            currentTorchSwingDuration += Time.deltaTime;
+        }
+        else
+        {
+            JAM.GetComponentInParent<Animator>().enabled = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -140,27 +152,30 @@ public class playerMovement : MonoBehaviour{
 
     void FixedUpdate()
     {
-        if (outofStamina)
+        if (!dead)
         {
-            currCooldown -= Time.deltaTime;
-            if (currCooldown <= 0) outofStamina = false;
-        }
+            if (outofStamina)
+            {
+                currCooldown -= Time.deltaTime;
+                if (currCooldown <= 0) outofStamina = false;
+            }
 
-        if(!swingingTorch) moveFunction();
+            if (!swingingTorch) moveFunction();
 
-        if (_running)
-        {
-            currStamina -= staminaDepletionRate;
-        }
-        else
-        {
-            currStamina += staminaReplenishRate;
-        }
+            if (_running)
+            {
+                currStamina -= staminaDepletionRate;
+            }
+            else
+            {
+                currStamina += staminaReplenishRate;
+            }
 
-        if (currStamina <= 0)
-        {
-            outofStamina = true;
-            currCooldown = sprintCooldown;
+            if (currStamina <= 0)
+            {
+                outofStamina = true;
+                currCooldown = sprintCooldown;
+            }
         }
     }
 
@@ -177,7 +192,6 @@ public class playerMovement : MonoBehaviour{
         if (Input.GetKey(KeyCode.Mouse0) && !swingingTorch && torchIsLit)
         {
             swingingTorch = true;
-            torch.transform.localScale = new Vector3(0.2f, 2, 0.2f);
             currentLightRadius += lightSwingRadiusIncrease;
         }
 
@@ -210,11 +224,12 @@ public class playerMovement : MonoBehaviour{
         {
             _running = false;
         }
- 
 
-        if(!_characterController.isGrounded) dir.y -= gravity;
 
-        _characterController.Move(dir *  Time.deltaTime);
+        //if(!_characterController.isGrounded) dir.y -= gravity;
+
+        //_characterController.Move(dir *  Time.deltaTime);
+        _characterController.SimpleMove(dir);
         
     }
     
@@ -247,5 +262,11 @@ public class playerMovement : MonoBehaviour{
         FlameParticle.GetComponent<ParticleSystem>().Play();
         LightSource.GetComponent<Light>().enabled = true;
         currentLightRadius = lightRadius;
+    }
+
+    public void DealDamage()
+    {
+        lives--;
+        JAM.color = new Vector4(1, 1, 1, (1.0f - (float)lives / maxLife));
     }
 }

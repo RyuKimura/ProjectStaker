@@ -163,7 +163,7 @@ public class EnemyAi : MonoBehaviour {
             if (currentCooldown >= attackCoolDown)
             {
                 CurrentState = EnemyState.ATTACK;
-                playerScript.lives--;
+                playerScript.DealDamage();
                 currentCooldown = 0;
             }
         }
