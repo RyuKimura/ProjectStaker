@@ -52,7 +52,7 @@ public class playerMovement : MonoBehaviour{
     float currStamina;
     bool outofStamina;
     float currCooldown;
-    [HideInInspector] public bool hasTorch = true;
+    [HideInInspector] public bool hasTorch;
     [HideInInspector] public bool torchIsLit;
     float torchMeter = 0;
     [HideInInspector] public bool swingingTorch;
@@ -72,6 +72,7 @@ public class playerMovement : MonoBehaviour{
         _camera.enabled = true;
         currStamina = stamina;
         maxLife = lives;
+        hasTorch = true;
         JAM.color = new Vector4(1,1,1, 0);
         torchMaterial = torch.GetComponent<Renderer>().material;
         torchColor = torchMaterial.GetColor("_EmissionColor");

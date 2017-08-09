@@ -21,7 +21,6 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject aiGoal;
     public GameObject[] TriggerBoxes;
-    public ParticleSystem deathFlame;
     [Space(10)]
 
     [Header("Variables")]
@@ -31,11 +30,17 @@ public class EnemySpawner : MonoBehaviour
     float currTimer;
     private float lightRadii;
     bool dead = false;
-    bool spawned = false; 
+    bool spawned = false;
+    ParticleSystem deathFlame;
+    ParticleSystem spawnsmoke;
+    playerMovement player;
 
     private void Start()
     {
-        lightRadii = aiGoal.GetComponent<playerMovement>().lightRadius;
+        deathFlame = transform.Find("deathflame").GetComponent<ParticleSystem>();
+        spawnsmoke = transform.Find("spawnsmoke").GetComponent<ParticleSystem>();
+        player = aiGoal.GetComponent<playerMovement>();
+        lightRadii = player.lightRadius;
         currTimer = timer;
         deathFlame.Stop();
 
@@ -54,7 +59,7 @@ public class EnemySpawner : MonoBehaviour
         {
             TimerMethod();
 
-            if (aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
+            if (player.hasTorch && player.torchIsLit && getDist() < player.currentLightRadius)
             {
                 deathFlame.Play();
                 dead = true;
@@ -62,6 +67,13 @@ public class EnemySpawner : MonoBehaviour
             }
         }
 
+        if (spawned)
+        {
+            ParticleSystem.ShapeModule SM = spawnsmoke.shape;
+            SM.radius += 0.5f;
+        }
+
+        if (spawnsmoke.isStopped) Destroy(gameObject);
 
         var lookPos = aiGoal.transform.position - transform.position;
         lookPos.y = 0;
@@ -85,9 +97,16 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 pos = transform.position;
         GameObject temp = Instantiate(enemyPrefab, new Vector3(pos.x, pos.y + (enemyPrefab.GetComponent<CapsuleCollider>().height / 2), pos.z), Quaternion.identity);
+        GetComponent<MeshRenderer>().enabled = false;
         temp.GetComponent<EnemyAi>().player = aiGoal;
         spawned = true;
         currTimer = timer;
+        ParticleSystem.MainModule mm = spawnsmoke.main;
+        var em = spawnsmoke.emission;
+        var rate = new ParticleSystem.MinMaxCurve();
+        rate.constantMax = 100;
+        em.rateOverTime = rate;
+        mm.loop = false;
     }
 
     float getDist()
