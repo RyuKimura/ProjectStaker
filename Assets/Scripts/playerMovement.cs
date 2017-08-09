@@ -29,8 +29,8 @@ public class playerMovement : MonoBehaviour{
     [Header("Mouse looking")]
     public float XSensitivity   ;
     public float YSensitivity   ;
-    public float MaxVeticalLook ;
-    public float MinVeticalLook ;
+    public float MaxVerticalLook ;
+    public float MinVerticalLook ;
     [Space(10)]
 
     public float gravity = 9.8f;
@@ -87,10 +87,9 @@ public class playerMovement : MonoBehaviour{
         //}
     }
 
-    // Update is called once per frame
     void Update () {
-        //jumping
         if (lives <= 0) dead = true;
+
         if (!dead)
         {
             Look();
@@ -114,12 +113,6 @@ public class playerMovement : MonoBehaviour{
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
-    //void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawWireSphere(transform.position, lightRadius);
-    //}
 
     void InteractWithObjects()
     {
@@ -160,23 +153,7 @@ public class playerMovement : MonoBehaviour{
                 currCooldown -= Time.deltaTime;
                 if (currCooldown <= 0) outofStamina = false;
             }
-
-            if (!swingingTorch) moveFunction();
-
-            if (_running)
-            {
-                currStamina -= staminaDepletionRate;
-            }
-            else
-            {
-                currStamina += staminaReplenishRate;
-            }
-
-            if (currStamina <= 0)
-            {
-                outofStamina = true;
-                currCooldown = sprintCooldown;
-            }
+            moveFunction();
         }
     }
 
@@ -220,18 +197,25 @@ public class playerMovement : MonoBehaviour{
         {
             dir *= sprintSpeedMultiplier;
             _running = true;
+            currStamina -= staminaDepletionRate;
         }
         else
         {
             _running = false;
+            currStamina += staminaReplenishRate;
+        }
+        
+        if (currStamina <= 0)
+        {
+            outofStamina = true;
+            currCooldown = sprintCooldown;
         }
 
+        int swing = !swingingTorch ? 1 : 0;
 
-        //if(!_characterController.isGrounded) dir.y -= gravity;
+        dir *= swing;
 
-        //_characterController.Move(dir *  Time.deltaTime);
         _characterController.SimpleMove(dir);
-        
     }
     
     void Look()
@@ -240,7 +224,7 @@ public class playerMovement : MonoBehaviour{
         dir = Vector2.Scale(dir, new Vector2(XSensitivity, YSensitivity));
         mouseLook += dir;
 
-        mouseLook.y = Mathf.Clamp(mouseLook.y, MinVeticalLook, MaxVeticalLook);
+        mouseLook.y = Mathf.Clamp(mouseLook.y, MinVerticalLook, MaxVerticalLook);
 
         transform.localRotation = Quaternion.AngleAxis(mouseLook.x, transform.up);
         _camera.transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);

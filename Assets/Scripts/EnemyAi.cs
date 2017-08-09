@@ -156,7 +156,7 @@ public class EnemyAi : MonoBehaviour {
     {
         if(getDistancetoPlayer() > attackRadius * attackRadius)
         {
-            agent.Move(transform.forward * 0.2f);
+            agent.Move(transform.forward * 0.1f);
         }
         else
         {
