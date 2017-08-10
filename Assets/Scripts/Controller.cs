@@ -5,6 +5,6 @@ public class Controller : MonoBehaviour {
 
     public void Restart()
     {
-        SceneManager.LoadScene("RyutoScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level1_Blockout", LoadSceneMode.Single);
     }
 }
