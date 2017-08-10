@@ -25,17 +25,24 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Variables")]
     public float timer;
-    public int enemyCount;
+    public float DestroyTimer;
     
-
-    int currEnemyCount = 0;
     float currTimer;
     private float lightRadii;
+    bool dead = false;
+    bool spawned = false;
+    ParticleSystem deathFlame;
+    ParticleSystem spawnsmoke;
+    playerMovement player;
 
     private void Start()
     {
-        lightRadii = aiGoal.GetComponent<playerMovement>().lightRadius;
+        deathFlame = transform.Find("deathflame").GetComponent<ParticleSystem>();
+        spawnsmoke = transform.Find("spawnsmoke").GetComponent<ParticleSystem>();
+        player = aiGoal.GetComponent<playerMovement>();
+        lightRadii = player.lightRadius;
         currTimer = timer;
+        deathFlame.Stop();
 
         for(int i = 0; i < TriggerBoxes.Length; i++)
         {
@@ -48,19 +55,30 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        if((int)SpawnMethod == (int)SpawnType.Timer)
+        if ((int)SpawnMethod == (int)SpawnType.Timer && !dead)
         {
             TimerMethod();
+
+            if (player.hasTorch && player.torchIsLit && getDist() < player.currentLightRadius)
+            {
+                deathFlame.Play();
+                dead = true;
+                Destroy(gameObject, DestroyTimer);
+            }
         }
+
+        if (spawned)
+        {
+            ParticleSystem.ShapeModule SM = spawnsmoke.shape;
+            SM.radius += 0.5f;
+        }
+
+        if (spawnsmoke.isStopped) Destroy(gameObject);
+
         var lookPos = aiGoal.transform.position - transform.position;
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);
         transform.rotation = Quaternion.LerpUnclamped(transform.rotation, rotation, 0.1f);
-
-        if(aiGoal.GetComponent<playerMovement>().hasTorch && getDist() < aiGoal.GetComponent<playerMovement>().currentLightRadius)
-        {
-            Destroy(gameObject);
-        }
     }
 
     void TimerMethod()
@@ -69,7 +87,7 @@ public class EnemySpawner : MonoBehaviour
         {
             currTimer -= Time.deltaTime;
         }
-        else if (currTimer <= 0 && currEnemyCount < enemyCount && getDist() > lightRadii * lightRadii)
+        else if (currTimer <= 0 && !spawned && getDist() > lightRadii)
         {
             SpawnEnemy();
         }
@@ -79,9 +97,16 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 pos = transform.position;
         GameObject temp = Instantiate(enemyPrefab, new Vector3(pos.x, pos.y + (enemyPrefab.GetComponent<CapsuleCollider>().height / 2), pos.z), Quaternion.identity);
+        GetComponent<MeshRenderer>().enabled = false;
         temp.GetComponent<EnemyAi>().player = aiGoal;
-        currEnemyCount++;
+        spawned = true;
         currTimer = timer;
+        ParticleSystem.MainModule mm = spawnsmoke.main;
+        var em = spawnsmoke.emission;
+        var rate = new ParticleSystem.MinMaxCurve();
+        rate.constantMax = 100;
+        em.rateOverTime = rate;
+        mm.loop = false;
     }
 
     float getDist()

@@ -34,3 +34,755 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Assets/Asset_Library/Shader Forge.unitypackage.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ExtractChannel.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ExtractChannel.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/FillColor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/FillColor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ReadPackedData.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common/ReadPackedData.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs/SFN_Abs.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs/SFN_Abs.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_3.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_3.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_5.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add/SFN_Add_5.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight/SFN_AmbientLight.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight/SFN_AmbientLight.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append/SFN_Append.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append/SFN_Append.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos/SFN_ArcCos.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos/SFN_ArcCos.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin/SFN_ArcSin.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin/SFN_ArcSin.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan/SFN_ArcTan.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan/SFN_ArcTan.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NOTO.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NOTO.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NPTP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_NPTP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTO.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTO.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTOW.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2/SFN_ArcTan2_ZTOW.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent/SFN_Bitangent.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent/SFN_Bitangent.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorBurn.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorBurn.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorDodge.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_ColorDodge.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Darken.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Darken.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Difference.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Difference.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Divide.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Divide.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Exclusion.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Exclusion.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardLight.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardLight.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardMix.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_HardMix.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Lighten.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Lighten.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearBurn.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearBurn.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearDodge.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearDodge.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearLight.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_LinearLight.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Multiply.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Multiply.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Overlay.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Overlay.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_PinLight.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_PinLight.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Screen.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Screen.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Subtract.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_Subtract.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_VividLight.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend/SFN_Blend_VividLight.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil/SFN_Ceil.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil/SFN_Ceil.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend/SFN_ChannelBlend.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend/SFN_ChannelBlend.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp/SFN_Clamp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp/SFN_Clamp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01/SFN_Clamp01.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01/SFN_Clamp01.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code/SFN_Code.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code/SFN_Code.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC1.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC1.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC3.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC3.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask/SFN_ComponentMask_CC4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp/SFN_ConstantClamp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp/SFN_ConstantClamp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp/SFN_ConstantLerp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp/SFN_ConstantLerp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos/SFN_Cos.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos/SFN_Cos.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross/SFN_Cross.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross/SFN_Cross.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap/SFN_Cubemap.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap/SFN_Cubemap.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX/SFN_DDX.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX/SFN_DDX.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY/SFN_DDXY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY/SFN_DDXY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY/SFN_DDY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY/SFN_DDY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth/SFN_Depth.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth/SFN_Depth.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend/SFN_DepthBlend.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend/SFN_DepthBlend.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_DES.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_DES.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_REQONLY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate/SFN_Desaturate_REQONLY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance/SFN_Distance.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance/SFN_Distance.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide/SFN_Divide.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide/SFN_Divide.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_ABS.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_ABS.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NEG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NEG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NRM.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_NRM.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_POS.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_POS.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_STD.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot/SFN_Dot_STD.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp/SFN_Exp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp/SFN_Exp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign/SFN_FaceSign.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign/SFN_FaceSign.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor/SFN_Floor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor/SFN_Floor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod/SFN_Fmod.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod/SFN_Fmod.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor/SFN_FogColor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor/SFN_FogColor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac/SFN_Frac.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac/SFN_Frac.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition/SFN_FragmentPosition.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition/SFN_FragmentPosition.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_EXP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_EXP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM_EXP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_NRM_EXP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_REQONLY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel/SFN_Fresnel_REQONLY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get/SFN_Get.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get/SFN_Get.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector/SFN_HalfVector.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector/SFN_HalfVector.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb/SFN_HsvToRgb.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb/SFN_HsvToRgb.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue/SFN_Hue.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue/SFN_Hue.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If/SFN_If.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If/SFN_If.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp/SFN_InverseLerp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp/SFN_InverseLerp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length/SFN_Length.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length/SFN_Length.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp/SFN_Lerp.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp/SFN_Lerp.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation/SFN_LightAttenuation.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation/SFN_LightAttenuation.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor/SFN_LightColor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor/SFN_LightColor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition/SFN_LightPosition.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition/SFN_LightPosition.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector/SFN_LightVector.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector/SFN_LightVector.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG10.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG10.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log/SFN_Log_LOG2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4/SFN_Matrix4x4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4/SFN_Matrix4x4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property/SFN_Matrix4x4Property.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property/SFN_Matrix4x4Property.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_3.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_3.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_5.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max/SFN_Max_5.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_3.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_3.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_5.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min/SFN_Min_5.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_2.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_2.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_3.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_3.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_4.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_4.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_5.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply/SFN_Multiply_5.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix/SFN_MultiplyMatrix.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix/SFN_MultiplyMatrix.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate/SFN_Negate.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate/SFN_Negate.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise/SFN_Noise.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise/SFN_Noise.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend/SFN_NormalBlend.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend/SFN_NormalBlend.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize/SFN_Normalize.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize/SFN_Normalize.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector/SFN_NormalVector.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector/SFN_NormalVector.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition/SFN_ObjectPosition.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition/SFN_ObjectPosition.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Default.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Default.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Reciprocal.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale/SFN_ObjectScale_Reciprocal.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus/SFN_OneMinus.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus/SFN_OneMinus.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_DIST.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_DIST.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_REQONLY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner/SFN_Panner_REQONLY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP_REF.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_DEP_REF.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REF.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REF.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REQONLY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_REQONLY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP_REF.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_DEP_REF.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_REF.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax/SFN_Parallax_UV_REF.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize/SFN_Posterize.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize/SFN_Posterize.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power/SFN_Power.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power/SFN_Power.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters/SFN_ProjectionParameters.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters/SFN_ProjectionParameters.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal/SFN_Reciprocal.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal/SFN_Reciprocal.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect/SFN_Reflect.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect/SFN_Reflect.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay/SFN_Relay.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay/SFN_Relay.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange/SFN_RemapRange.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange/SFN_RemapRange.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced/SFN_RemapRangeAdvanced.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced/SFN_RemapRangeAdvanced.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv/SFN_RgbToHsv.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv/SFN_RgbToHsv.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_ANG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_ANG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_ANG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_ANG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD_ANG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_PIV_SPD_ANG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_REQONLY.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_REQONLY.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD_ANG.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator/SFN_Rotator_SPD_ANG.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round/SFN_Round.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round/SFN_Round.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor/SFN_SceneColor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor/SFN_SceneColor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth/SFN_SceneDepth.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth/SFN_SceneDepth.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters/SFN_ScreenParameters.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters/SFN_ScreenParameters.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos/SFN_ScreenPos.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos/SFN_ScreenPos.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set/SFN_Set.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set/SFN_Set.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign/SFN_Sign.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign/SFN_Sign.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin/SFN_Sin.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin/SFN_Sin.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep/SFN_Smoothstep.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep/SFN_Smoothstep.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt/SFN_Sqrt.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt/SFN_Sqrt.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step/SFN_Step.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step/SFN_Step.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract/SFN_Subtract.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract/SFN_Subtract.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty/SFN_SwitchProperty.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty/SFN_SwitchProperty.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan/SFN_Tan.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan/SFN_Tan.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent/SFN_Tangent.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent/SFN_Tangent.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_MIP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_MIP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_NoInputs.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_NoInputs.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV_MIP.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d/SFN_Tex2d_UV_MIP.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset/SFN_Tex2dAsset.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset/SFN_Tex2dAsset.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord/SFN_TexCoord.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord/SFN_TexCoord.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time/SFN_Time.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time/SFN_Time.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform/SFN_Transform.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform/SFN_Transform.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose/SFN_Transpose.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose/SFN_Transpose.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc/SFN_Trunc.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc/SFN_Trunc.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile/SFN_UVTile.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile/SFN_UVTile.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection/SFN_VectorProjection.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection/SFN_VectorProjection.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection/SFN_VectorRejection.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection/SFN_VectorRejection.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor/SFN_VertexColor.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor/SFN_VertexColor.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition/SFN_ViewPosition.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition/SFN_ViewPosition.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector/SFN_ViewReflectionVector.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector/SFN_ViewReflectionVector.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector/SFN_ViewVector.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector/SFN_ViewVector.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/Common.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Abs.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Add.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_AmbientLight.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Append.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcCos.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcSin.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ArcTan2.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Bitangent.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Blend.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Ceil.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ChannelBlend.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Clamp01.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Code.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ComponentMask.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantClamp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ConstantLerp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cos.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cross.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Cubemap.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDX.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDXY.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DDY.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Depth.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_DepthBlend.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Desaturate.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Distance.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Divide.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Dot.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Exp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FaceSign.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Floor.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fmod.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FogColor.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Frac.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_FragmentPosition.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Fresnel.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Get.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HalfVector.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_HsvToRgb.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Hue.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_If.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_InverseLerp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Length.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Lerp.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightAttenuation.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightColor.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightPosition.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_LightVector.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Log.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Matrix4x4Property.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Max.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Min.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Multiply.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_MultiplyMatrix.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Negate.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Noise.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalBlend.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Normalize.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_NormalVector.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectPosition.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ObjectScale.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_OneMinus.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Panner.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Parallax.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Posterize.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Power.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ProjectionParameters.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reciprocal.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Reflect.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Relay.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRange.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RemapRangeAdvanced.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_RgbToHsv.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Rotator.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Round.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneColor.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SceneDepth.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenParameters.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ScreenPos.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Set.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sign.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sin.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Smoothstep.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Sqrt.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Step.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Subtract.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_SwitchProperty.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tan.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tangent.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2d.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Tex2dAsset.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_TexCoord.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Time.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transform.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Transpose.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_Trunc.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_UVTile.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorProjection.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VectorRejection.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_VertexColor.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewPosition.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewReflectionVector.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering/SFN_ViewVector.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs
+Assets/Extensions/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeInspector.cs.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeMaterialInspector.cs
+Assets/Extensions/ShaderForge/Editor/InternalResources/Inspectors/ShaderForgeMaterialInspector.cs.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono.ttf
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono.ttf.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold.ttf
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold.ttf.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold-Italic.ttf
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Bold-Italic.ttf.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Italic.ttf
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts/VeraMono-Italic.ttf.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/node_3d_data_mask.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/node_3d_data_mask.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_bitangent.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_bitangent.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_depth.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_depth.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fragmentposition.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fragmentposition.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fresnel.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_fresnel.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_halfvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_halfvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightattenuation.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightattenuation.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightcolor.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightcolor.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_lightvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector_2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_normalvector_2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_tangent.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_tangent.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewreflectionvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewreflectionvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data/sfn_viewvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/Data.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_ambientlight.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_ambientlight.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_bitangent.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_bitangent.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_depth.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_depth.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_e.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_e.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign_2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_facesign_2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_final.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_final.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor_2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fogcolor_2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fragmentposition.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_fragmentposition.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_halfvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_halfvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightattenuation.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightattenuation.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightcolor.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightcolor.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightposition.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightposition.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_lightvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector_2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_normalvector_2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectposition.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectposition.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectscale.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_objectscale.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_phi.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_phi.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_pi.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_pi.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_projectionparameters.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_projectionparameters.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_root2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_root2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenparameters.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenparameters.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_2.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_2.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_3.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_screenpos_3.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tangent.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tangent.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tau.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_tau.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_time.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_time.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_vertexcolor.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_vertexcolor.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewposition.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewposition.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewreflectionvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewreflectionvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewvector.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes/sfn_viewvector.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/chk.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/chk.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/chk_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/chk_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Fonts.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/handle_drag.tga
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/handle_drag.tga.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon_normal.tga
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/icon_normal.tga.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_frag_tex_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/inst_vert_tex_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/logo.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/logo.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/logo_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/logo_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/Nodes.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_custom.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_custom.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_highlight.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_highlight.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_litbasic.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_litbasic.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_litpbr.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_litpbr.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particleadditive_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlealphablended_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_particlemultiplicative_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_posteffect.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_posteffect.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_sky.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_sky.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_sprite.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_sprite.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_unlit.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/preset_unlit.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/screenshot_icon.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/screenshot_icon.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/screenshot_icon_light.png
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface/screenshot_icon_light.png.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Meshes/sf_meshes.fbx
+Assets/Extensions/ShaderForge/Editor/InternalResources/Meshes/sf_meshes.fbx.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetBasic.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetBasic.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetCustomLighting.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetCustomLighting.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAdditive.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAdditive.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAlphaBlended.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleAlphaBlended.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleMultiplicative.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetParticleMultiplicative.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetPBR.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetPBR.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetPostEffect.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetPostEffect.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetSky.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetSky.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetSprite.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetSprite.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetUnlit.shader
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets/PresetUnlit.shader.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/GPU Rendering.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Inspectors.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Interface.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Meshes.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources/Shader Presets.meta
+Assets/Extensions/ShaderForge/Editor/InternalResources.meta
+Assets/Extensions/ShaderForge/Editor/ShaderForge.dll.meta
+Assets/Extensions/ShaderForge/Example Assets/Meshes/sf_example_meshes.fbx
+Assets/Extensions/ShaderForge/Example Assets/Meshes/sf_example_meshes.fbx.meta
+Assets/Extensions/ShaderForge/Example Assets/Scripts/EditorLabel.cs
+Assets/Extensions/ShaderForge/Example Assets/Scripts/EditorLabel.cs.meta
+Assets/Extensions/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs
+Assets/Extensions/ShaderForge/Example Assets/Scripts/EnableCameraDepthInForward.cs.meta
+Assets/Extensions/ShaderForge/Example Assets/Scripts/SoftNormalsToVertexColor.cs
+Assets/Extensions/ShaderForge/Example Assets/Scripts/SoftNormalsToVertexColor.cs.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/CustomLighting.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/CustomLighting.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/CustomLighting.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/CustomLighting.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/LightWrapping.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/LightWrapping.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/LightWrapping.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/LightWrapping.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Parallax.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Parallax.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Parallax.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Parallax.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/PixelRotator.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/PixelRotator.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/PixelRotator.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/PixelRotator.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Refraction.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Refraction.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Refraction.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Refraction.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/TessellationDisplacement.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/TessellationDisplacement.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/TessellationDisplacement.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/TessellationDisplacement.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Tiles.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Tiles.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Tiles.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Tiles.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Vegetation.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Vegetation.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Vegetation.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/Vegetation.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation_blue.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexAnimation_blue.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexColorRounding.mat
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexColorRounding.mat.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexColorRounding.shader
+Assets/Extensions/ShaderForge/Example Assets/Shaders/VertexColorRounding.shader.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_alpha_circle.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_alpha_circle.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_alpha_circle_02.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_alpha_circle_02.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_conc_floor_01_d.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_conc_floor_01_d.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_conc_floor_01_n.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_conc_floor_01_n.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_light_01.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_light_01.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_ramp_01.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_ramp_01.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_ramp_02.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_gradient_ramp_02.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_leaves_01_d.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_leaves_01_d.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_leaves_01_n.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_leaves_01_n.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_noise_clouds_01.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_noise_clouds_01.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_noise_grain_01.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_noise_grain_01.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_parallax_test_ao_height.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_parallax_test_ao_height.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_parallax_test_normals.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_parallax_test_normals.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_rgb_overlap.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_rgb_overlap.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_texcoords.png
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_texcoords.png.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_tile_01_d.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_tile_01_d.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_tile_01_n.tga
+Assets/Extensions/ShaderForge/Example Assets/Textures/sf_tile_01_n.tga.meta
+Assets/Extensions/ShaderForge/Example Assets/Meshes.meta
+Assets/Extensions/ShaderForge/Example Assets/Scripts.meta
+Assets/Extensions/ShaderForge/Example Assets/Shaders.meta
+Assets/Extensions/ShaderForge/Example Assets/Textures.meta
+Assets/Extensions/ShaderForge/Editor.meta
+Assets/Extensions/ShaderForge/Example Assets.meta
+Assets/Extensions/ShaderForge/Example Scene.unity
+Assets/Extensions/ShaderForge/Example Scene.unity.meta
+Assets/Extensions/ShaderForge/Readme.txt
+Assets/Extensions/ShaderForge/Readme.txt.meta
+Assets/Extensions/ShaderForge.meta

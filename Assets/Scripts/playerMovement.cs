@@ -29,13 +29,16 @@ public class playerMovement : MonoBehaviour{
     [Header("Mouse looking")]
     public float XSensitivity   ;
     public float YSensitivity   ;
-    public float MaxVeticalLook ;
-    public float MinVeticalLook ;
+    public float MaxVerticalLook ;
+    public float MinVerticalLook ;
     [Space(10)]
 
     public float gravity = 9.8f;
     public GameObject head;
     public GameObject torch;
+    public GameObject FlameParticle;
+    public GameObject LightSource;
+    public UnityEngine.UI.Image JAM;
 
     [HideInInspector] public float currentLightRadius = 0;
 
@@ -55,17 +58,27 @@ public class playerMovement : MonoBehaviour{
     [HideInInspector] public bool swingingTorch;
     [HideInInspector] public bool successfullySwung;
     float currentTorchSwingDuration;
+    Material torchMaterial;
+    Color torchColor;
+    int maxLife;
+    bool dead = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         Application.runInBackground = true;
         Cursor.lockState = CursorLockMode.Locked;
         _characterController = GetComponent<CharacterController>();
         _camera = head.GetComponent<Camera>();
         _camera.enabled = true;
         currStamina = stamina;
+        maxLife = lives;
         hasTorch = true;
-        torchIsLit = false;
+        JAM.color = new Vector4(1,1,1, 0);
+        torchMaterial = torch.GetComponent<Renderer>().material;
+        torchColor = torchMaterial.GetColor("_EmissionColor");
+        TurnLightOff();
+
+
 
         //if (!GetComponent<NetworkIdentity>().isLocalPlayer)
         //{
@@ -73,32 +86,33 @@ public class playerMovement : MonoBehaviour{
         //    Destroy(gameObject.GetComponent<playerMovement>());
         //}
     }
-	
-	// Update is called once per frame
-	void Update () {
-        //jumping
-        Look();
-        Debug.DrawRay(head.transform.position, head.transform.forward, Color.red);
-        InteractWithObjects();
-        if (swingingTorch)
+
+    void Update () {
+        if (lives <= 0) dead = true;
+
+        if (!dead)
         {
-            if(currentTorchSwingDuration > lightSwingDuration)
+            Look();
+            InteractWithObjects();
+
+            if (swingingTorch)
             {
-                swingingTorch = false;
-                successfullySwung = false;
-                torch.transform.localScale = new Vector3(0.1f, 1, 0.1f);
-                currentLightRadius -= lightSwingRadiusIncrease;
-                currentTorchSwingDuration = 0;
+                if (currentTorchSwingDuration > lightSwingDuration)
+                {
+                    swingingTorch = false;
+                    successfullySwung = false;
+                    currentLightRadius -= lightSwingRadiusIncrease;
+                    currentTorchSwingDuration = 0;
+                }
+                currentTorchSwingDuration += Time.deltaTime;
             }
-            currentTorchSwingDuration += Time.deltaTime;
+        }
+        else
+        {
+            JAM.GetComponentInParent<Animator>().enabled = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
-
-    //void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawWireSphere(transform.position, lightRadius);
-    //}
 
     void InteractWithObjects()
     {
@@ -124,9 +138,7 @@ public class playerMovement : MonoBehaviour{
                 torchMeter +=Time.deltaTime;
                 if (torchMeter >= timeTakenToLightTorch)
                 {
-                    torchIsLit = true;
-                    torch.GetComponent<MeshRenderer>().material.color = Color.red;
-                    currentLightRadius = lightRadius;
+                    TurnLightOn();
                 }
             }
         }
@@ -134,27 +146,14 @@ public class playerMovement : MonoBehaviour{
 
     void FixedUpdate()
     {
-        if (outofStamina)
+        if (!dead)
         {
-            currCooldown -= Time.deltaTime;
-            if (currCooldown <= 0) outofStamina = false;
-        }
-
-        if(!swingingTorch) moveFunction();
-
-        if (_running)
-        {
-            currStamina -= staminaDepletionRate;
-        }
-        else
-        {
-            currStamina += staminaReplenishRate;
-        }
-
-        if (currStamina <= 0)
-        {
-            outofStamina = true;
-            currCooldown = sprintCooldown;
+            if (outofStamina)
+            {
+                currCooldown -= Time.deltaTime;
+                if (currCooldown <= 0) outofStamina = false;
+            }
+            moveFunction();
         }
     }
 
@@ -171,7 +170,6 @@ public class playerMovement : MonoBehaviour{
         if (Input.GetKey(KeyCode.Mouse0) && !swingingTorch && torchIsLit)
         {
             swingingTorch = true;
-            torch.transform.localScale = new Vector3(0.2f, 2, 0.2f);
             currentLightRadius += lightSwingRadiusIncrease;
         }
 
@@ -199,17 +197,25 @@ public class playerMovement : MonoBehaviour{
         {
             dir *= sprintSpeedMultiplier;
             _running = true;
+            currStamina -= staminaDepletionRate;
         }
         else
         {
             _running = false;
+            currStamina += staminaReplenishRate;
         }
- 
-
-        if(!_characterController.isGrounded) dir.y -= gravity;
-
-        _characterController.Move(dir *  Time.deltaTime);
         
+        if (currStamina <= 0)
+        {
+            outofStamina = true;
+            currCooldown = sprintCooldown;
+        }
+
+        int swing = !swingingTorch ? 1 : 0;
+
+        dir *= swing;
+
+        _characterController.SimpleMove(dir);
     }
     
     void Look()
@@ -218,10 +224,34 @@ public class playerMovement : MonoBehaviour{
         dir = Vector2.Scale(dir, new Vector2(XSensitivity, YSensitivity));
         mouseLook += dir;
 
-        mouseLook.y = Mathf.Clamp(mouseLook.y, MinVeticalLook, MaxVeticalLook);
+        mouseLook.y = Mathf.Clamp(mouseLook.y, MinVerticalLook, MaxVerticalLook);
 
         transform.localRotation = Quaternion.AngleAxis(mouseLook.x, transform.up);
         _camera.transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
 
+    }
+
+    void TurnLightOff()
+    {
+        torchIsLit = false;
+        torch.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
+        FlameParticle.GetComponent<ParticleSystem>().Stop();
+        LightSource.GetComponent<Light>().enabled = false;
+        currentLightRadius = 0;
+    }
+
+    void TurnLightOn()
+    {
+        torchIsLit = true;
+        torch.GetComponent<Renderer>().material.SetColor("_EmissionColor", torchColor);
+        FlameParticle.GetComponent<ParticleSystem>().Play();
+        LightSource.GetComponent<Light>().enabled = true;
+        currentLightRadius = lightRadius;
+    }
+
+    public void DealDamage()
+    {
+        lives--;
+        JAM.color = new Vector4(1, 1, 1, (1.0f - (float)lives / maxLife));
     }
 }
