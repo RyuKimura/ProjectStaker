@@ -145,6 +145,7 @@ ModelImporter:
     2300074: X_low 1
     2300076: Y_low
     2300078: Z_low
+    2300080: //RootNode
     3300000: A_low
     3300002: AA_low
     3300004: B_low
@@ -185,6 +186,7 @@ ModelImporter:
     3300074: X_low 1
     3300076: Y_low
     3300078: Z_low
+    3300080: //RootNode
     4300000: GG_low
     4300002: HH_low
     4300004: II_low
@@ -225,6 +227,7 @@ ModelImporter:
     4300074: W_low
     4300076: X_low
     4300078: Y_low
+    4300080: SM_cart
     9500000: //RootNode
   materials:
     importMaterials: 1
