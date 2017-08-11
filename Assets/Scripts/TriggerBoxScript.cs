@@ -5,7 +5,7 @@ using UnityEngine;
 [SerializeField]
 public class TriggerBoxScript : MonoBehaviour {
 
-    public List<GameObject> parent = new List<GameObject>();
+    [HideInInspector] public List<GameObject> parent = new List<GameObject>();
 
     public bool alreadyActivated = false;
 

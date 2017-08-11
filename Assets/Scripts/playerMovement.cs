@@ -202,6 +202,7 @@ public class playerMovement : MonoBehaviour{
         else
         {
             _running = false;
+            if(currStamina < stamina)
             currStamina += staminaReplenishRate;
         }
         

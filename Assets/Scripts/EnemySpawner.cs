@@ -31,14 +31,14 @@ public class EnemySpawner : MonoBehaviour
     private float lightRadii;
     bool dead = false;
     bool spawned = false;
-    ParticleSystem deathFlame;
-    ParticleSystem spawnsmoke;
+    public ParticleSystem deathFlame;
+    public ParticleSystem spawnsmoke;
     playerMovement player;
 
     private void Start()
     {
-        deathFlame = transform.Find("deathflame").GetComponent<ParticleSystem>();
-        spawnsmoke = transform.Find("spawnsmoke").GetComponent<ParticleSystem>();
+        //deathFlame = transform.Find("deathflame").GetComponent<ParticleSystem>();
+        //spawnsmoke = transform.Find("spawnsmoke").GetComponent<ParticleSystem>();
         player = aiGoal.GetComponent<playerMovement>();
         lightRadii = player.lightRadius;
         currTimer = timer;
@@ -55,16 +55,16 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
+        if (player.hasTorch && player.torchIsLit && getDist() < player.currentLightRadius && !dead)
+        {
+            deathFlame.Play();
+            dead = true;
+            Destroy(gameObject, DestroyTimer);
+        }
+
         if ((int)SpawnMethod == (int)SpawnType.Timer && !dead)
         {
             TimerMethod();
-
-            if (player.hasTorch && player.torchIsLit && getDist() < player.currentLightRadius)
-            {
-                deathFlame.Play();
-                dead = true;
-                Destroy(gameObject, DestroyTimer);
-            }
         }
 
         if (spawned)
